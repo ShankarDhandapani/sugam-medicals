@@ -19,6 +19,11 @@ w\:* {behavior:url(#default#VML);}
 </style>
 <![endif]-->
 <title> SUGAM MEDICALS </title>
+	<style>
+		body{
+			background-image: url("");
+		}
+	</style>
 <link rel=themeData href="index_files/themedata.thmx">
 <link rel=colorSchemeMapping href="index_files/colorschememapping.xml">
 <!--[if gte mso 9]><xml>
@@ -869,6 +874,13 @@ src="image004.jpg" alt=image003.jpg v:shapes="Picture_x0020_3"><![endif]></span>
   <input type="submit" value="Send">
    <input type="reset" value="Reset">
   </fieldset>
+		<script language="JavaScript">
+var frmvalidator  = new Validator("contactform");
+frmvalidator.addValidation("name","req","Please provide your name");
+frmvalidator.addValidation("email","req","Please provide your email");
+frmvalidator.addValidation("email","email",
+"Please enter a valid email address");
+</script>
 	</form>
 </div>
 
