@@ -768,28 +768,12 @@ ul
  <o:shapelayout v:ext="edit">
   <o:idmap v:ext="edit" data="1"/>
  </o:shapelayout></xml><![endif]-->
-	<script>
-function startTime() {
-    var today = new Date();
-    var h = today.getHours();
-    var m = today.getMinutes();
-    var s = today.getSeconds();
-    m = checkTime(m);
-    s = checkTime(s);
-    document.getElementById('txt').innerHTML =
-    h-12 + ":" + m + ":" + s;
-    var t = setTimeout(startTime, 500);
-}
-function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-    return i;
-}
-</script>
+	
 </head>
 
 <body lang="EN-IN" link="blue" vlink="purple" style="tab-interval:
 36.0pt"  onload="startTime()">
-	<center><style "font-size: 80px"><div id="txt"></div></style></center>	<br><br><br>
+	<iframe src="https://shankardhandapani.github.io/time/"><br><br><br></iframe>
 
 <div class="Section1">
 
