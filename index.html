@@ -25,8 +25,9 @@ w\:* {behavior:url(#default#VML);}
 <title> SUGAM MEDICALS </title>
 	<link rel="shortcut icon" href="images/s.png" type="image/x-icon">
 	<!--<style>
-		body{
-			background-image: url("");
+		function myfunction(){
+			var x= new Date(document.lastmodified);
+			document.getElementById("demo").innerHTML= x;
 		}
 	</style>-->
 <link rel="themeData" href="file:///F:/github/sugam-medicals/sugam-medicals/index_files/themedata.thmx">
@@ -802,6 +803,13 @@ ul
     box-shadow: 11px 13px 18px #6511e8;
     /* color: #d01313; */
 "><!--[endif]--></span></p>
+	<p> <button onclick="myfunction()"> DATE <button>
+		<script>
+		function myfunction(){
+			var x= new Date(document.lastmodified);
+			document.getElementById("demo").innerHTML= x;
+		}
+	</script>
 
 <p class="MsoNormal" align="center" style="text-align:center;background-color: rgba(28, 199, 118, 0.69);text-shadow: 2px -8px 4px rgb(16, 27, 232);"><span style="font-size:72.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;color:red">SUGAM
 MEDICALS</span><span style="font-size:36.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
