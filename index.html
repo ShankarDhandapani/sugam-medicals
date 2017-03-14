@@ -768,10 +768,28 @@ ul
  <o:shapelayout v:ext="edit">
   <o:idmap v:ext="edit" data="1"/>
  </o:shapelayout></xml><![endif]-->
+	<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h-12 + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
 </head>
 
 <body lang="EN-IN" link="blue" vlink="purple" style="tab-interval:
-36.0pt">
+36.0pt" onload="startTime()">
+<div id="txt"></div>	
 
 <div class="Section1">
 
@@ -803,14 +821,7 @@ ul
     box-shadow: 11px 13px 18px #6511e8;
     /* color: #d01313; */
 "><!--[endif]--></span></p>
-	<p> <button onclick="myfunction()"> DATE <button>
-		<script>
-		function myfunction(){
-	                 date= Date();
-			document.write(date);
-		}
-		</script>
-		</p>
+	
 
 <p class="MsoNormal" align="center" style="text-align:center;background-color: rgba(28, 199, 118, 0.69);text-shadow: 2px -8px 4px rgb(16, 27, 232);"><span style="font-size:72.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;color:red">SUGAM
 MEDICALS</span><span style="font-size:36.0pt;mso-fareast-font-family:&quot;Times New Roman&quot;;
